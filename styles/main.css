@@ -82,6 +82,11 @@ html, body {
 .hero-left p {
     font-style: italic;
 }
+.hero-left p.subtext {
+    font-style: italic;
+    font-size: 10px;
+    text-align: right;
+}
 
 .hero-right img {
     height: 350px;
@@ -94,12 +99,14 @@ html, body {
     /* border: 1px solid yellow; */
     background-color: #FFFDF5;
     padding: 20px;
-    width: 100%;
+    min-height: 500px;
     color: #364c84;
 
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
 
 .project-list-container header {
@@ -114,6 +121,31 @@ html, body {
 
 .project-list-container .project-list li {
     /* border: 1px solid black; */
+    list-style-type: none;
+}
+
+/* ABOUT ME */
+.about-me-container {
+    height: 500px;
+    background-color: #C0E0FF;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me-container .about-me-content {
+    display: flex;
+    gap: 20px;
+
+    flex-direction: column;
+    flex-basis: 40%;
+}
+
+.about-me-container .about-me-content .first-paragraph:before {
+  content: url(../images/quote-bubble.svg);
+  float: left;
+  padding: 10px;
 }
 
 /* CTA */
