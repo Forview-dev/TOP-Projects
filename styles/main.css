@@ -65,13 +65,20 @@ html, body {
     /* border: 1px solid red; */
     background-color: #364c84;
     padding: 20px;
+    height: 500px;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
 }
 
 .hero-container .hero-left, .hero-container .hero-right {
     color: #FFFDF5;
+}
+
+.hero-left p {
+    font-style: italic;
 }
 
 /* PROJECT LIST */
