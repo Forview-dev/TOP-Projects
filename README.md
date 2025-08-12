@@ -38,4 +38,4 @@ The contents might be messy at times — and that’s intentional (not really). 
 - **Aug. 10, 2025**: Initial commit, trying to figure out git, and some HTML & CSS basic courses
     - **same day**: completing the first assignement in the form of a basic cookbook
     - **same day**: figured I should use some form of boilerplate on my projects, so I added a folder which would contain that
-- **Aug. 11, 2025**: Learned about flexboxes (*amazing!*), refactored the landing page with all the new knowledge
+- **Aug. 11 to Aug 12, 2025**: Learned about flexboxes (*amazing!*), refactored the landing page with all the new knowledge
