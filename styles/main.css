@@ -26,12 +26,14 @@ html, body {
     padding: 20px;
 
     display: flex;
+    justify-content: center;
 }
 
 .header-container header {
     display: flex;
-    width: 100%;
-    justify-content: space-between;
+    width: 70%;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .header-container header h1, .header-container header a {
