@@ -55,10 +55,15 @@ html, body {
 
 .header-container header .links {
     display: flex;
-    gap: 10px;
+    gap: 20px;
 
     justify-content: center;
     align-items: center;
+}
+
+.header-container header .links .social-img {
+    width: 25px;
+    height: 25px;
 }
 
 
@@ -105,18 +110,29 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 20px;
 }
 
 .project-list-container header {
+    /* border: 1px solid red; */
     font-weight: bold;
-    font-size: 28px;
+    font-size: 30px;
 }
 
 .project-list-container .project-list {
+    /* border: 1px solid red; */
+    width: 80%;
     display: flex;
-    gap: 10px;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.project-list-container .project-list .list-title {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;;
+
 }
 
 .project-list-container .project-list li {
@@ -124,9 +140,27 @@ html, body {
     list-style-type: none;
 }
 
+.project-list-container .project-list li a {
+    text-decoration: none;
+    display: block;
+
+    background-color: #88A2FF;
+    color: #E7F1A8;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 10px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.project-list-container .project-list li a:after {
+    content: url(../images/link.svg);
+    float: right;
+    padding-left: 10px;
+}
 /* ABOUT ME */
 .about-me-container {
-    height: 500px;
+    height: 400px;
     background-color: #C0E0FF;
 
     display: flex;
@@ -137,25 +171,41 @@ html, body {
 .about-me-container .about-me-content {
     display: flex;
     gap: 20px;
-
     flex-direction: column;
     flex-basis: 40%;
+
+    color: #364c84;
+    font-size: 16px;
 }
 
 .about-me-container .about-me-content .first-paragraph:before {
   content: url(../images/quote-bubble.svg);
   float: left;
-  padding: 10px;
+  margin: 5px;
 }
 
 /* CTA */
 .cta-container {
     /* border: 1px solid brown; */
-    padding: 20px;
+    height: 150px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-container .cta-content {
+    background-color: #E7F1A8;
+    border-radius: 10px;
+    padding: 25px;
+    width: 60%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .cta-container h1 {
-    background-color: #E7F1A8;
     color: #364c84;
 }
 
