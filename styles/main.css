@@ -81,6 +81,12 @@ html, body {
     font-style: italic;
 }
 
+.hero-right img {
+    height: 350px;
+    width: auto;
+    border-radius: 10px;
+}
+
 /* PROJECT LIST */
 .project-list-container {
     /* border: 1px solid yellow; */
