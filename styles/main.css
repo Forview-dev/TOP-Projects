@@ -18,6 +18,12 @@
 
 html, body {
     background-color: #FFFDF5;
+    min-height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
 }
 
 /* HEADER */
@@ -125,6 +131,7 @@ html, body {
 
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     align-items: center;
     justify-content: space-evenly;
     gap: 20px;
