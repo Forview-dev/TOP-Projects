@@ -39,3 +39,4 @@ The contents might be messy at times — and that’s intentional (not really). 
     - **same day**: completing the first assignement in the form of a basic cookbook
     - **same day**: figured I should use some form of boilerplate on my projects, so I added a folder which would contain that
 - **Aug. 11 to Aug 12, 2025**: Learned about flexboxes (*amazing!*), refactored the landing page with all the new knowledge
+- **Aug 13, 2025**: Tinkered with some Javascript
