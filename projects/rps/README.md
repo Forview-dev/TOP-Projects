@@ -21,4 +21,4 @@ I made this in about 3 hours as part of the learning journey — focusing on pra
 ### ✅ TODO
 - Create a simple UI for browser play (kinda ✅)
 - Add DOM updates to display game results visually (kinda ✅)
-- Improve game flow with a score tracker in the UI  
+- Improve game flow with a score tracker in the UI (kinda ✅) 
