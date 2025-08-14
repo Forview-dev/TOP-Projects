@@ -1,10 +1,34 @@
 const rock = "rock";
 const paper = "paper";
 const scissors = "scissors";
+
+let playerChoice, computerChoice = null;
+
 const player = "player";
 const computer = "computer";
 
-let playerScore, computerScore, round = 0;
+const playerResults = document.querySelector(".playerResult");
+const computerResult = document.querySelector(".computerResult");
+const rockBtn = document.querySelector(".rockBtn");
+const paperBtn = document.querySelector(".paperBtn");
+const scissorsBtn = document.querySelector(".scissorsBtn");
+
+let playerScore = 0;
+let computerScore = 0;
+let round = 0;
+
+
+rockBtn.addEventListener("click", () => {
+    playRound(rock, getComputerChoice());
+});
+
+paperBtn.addEventListener("click", () => {
+    playRound(paper, getComputerChoice());
+});
+
+scissorsBtn.addEventListener("click", () => {
+    playRound(scissors, getComputerChoice());
+});
 
 function getComputerChoice() {
     let n = Math.random();
@@ -22,6 +46,22 @@ function getPlayerChoice() {
 
     // lets make that case insensitive
     return choice.toLowerCase();
+}
+
+function updateDOM(playerScore, computerScore, isGameComplete) {
+    playerResults.textContent = playerScore;
+    computerResult.textContent = computerScore;
+}
+
+function computeRound(winner) {
+    if(winner === player) {
+        playerScore++;
+    }
+    else if(winner === computer) {
+        computerScore++;
+    }
+
+    updateDOM(playerScore, computerScore, false)
 }
 
 function playRound(playerChoice, computerChoice) {
@@ -97,34 +137,7 @@ function playRound(playerChoice, computerChoice) {
             break;       
     }
 
-    return roundWinner;
+    computeRound(roundWinner);
 }
 
-function playGame(rounds = 5) {
-    let roundWinner = null;
-
-    while(rounds > 0) {
-        roundWinner = playRound(getPlayerChoice(), getComputerChoice());
-        if(roundWinner === player) {
-            playerScore++;
-            rounds--;
-        }
-        else if(roundWinner === computer) {
-            computerScore++;
-            rounds--;
-        }
-        console.warn(rounds);
-    }
-
-    if(playerScore = computerScore) {
-        console.warn("GAME DRAW");
-    }
-    else if(playerScore < computerScore) {
-        console.warn("COMPUTER WINS !");
-    }
-    else {// playerScore > computerScore
-        console.warn("PLAYER WINS !");
-    }
-}
-
-playGame();
+updateDOM(playerScore, computerScore, false);
