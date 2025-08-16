@@ -172,6 +172,7 @@ body {
 .project-list-container .project-list li a {
     text-decoration: none;
     display: block;
+    transition: padding 1s ease-in-out;
 
     background-color: #88A2FF;
     color: #E7F1A8;
@@ -183,17 +184,15 @@ body {
 }
 
 .project-list-container .project-list li a:after {
-    content: url(../images/link.svg);
-    float: right;
-    padding-left: 10px;
-}
-
-.project-list-container .project-list li a:hover::after {
     content: url(../images/link-open.svg);
     float: right;
     padding-left: 10px;
 }
 
+.project-list-container .project-list li a:hover {
+    padding-left: 25px;
+    transition: padding 1s ease-out;
+}
 
 /* ABOUT ME */
 .about-me-container {
@@ -215,10 +214,9 @@ body {
     font-size: 16px;
 }
 
-.about-me-container .about-me-content .first-paragraph:before {
-  content: url(../images/quote-bubble.svg);
-  float: left;
-  margin: 5px;
+.about-me-content .impact {
+    font-size: 18px;
+    font-weight: bold;
 }
 
 /* CTA */
