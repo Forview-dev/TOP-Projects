@@ -23,7 +23,7 @@
     <div class="hero-container">
         <div class="hero-left">
             <h1>Rock, Paper, Scissors</h1>
-            <p>a mini-game</p>
+            <p>Best of ∞. Good luck !</p>
             <p class="subtext"></p>
         </div>
 
@@ -33,12 +33,32 @@
     </div>
 
     <div id="game" class="game-container">
-        <p class="rules">Best of ∞. Good luck.</p>
-        <p class="game-result">Human: <span class="playerResult"></span> - Computer: <span class="computerResult"></span></p>
-        <div class="game-buttons">
-            <button class="rockBtn">ROCK</button>
-            <button class="paperBtn">PAPER</button>
-            <button class="scissorsBtn">SCISSORS</button>
+
+        <div class="computer-container">
+            <header>
+                <h1>COMPUTER</h1>
+                <p>Score: [ <span class="computerResult"></span> ]</p>
+            </header>
+            <div class="game-buttons">
+                <button class="computerBtn rock choice">ROCK</button>
+                <button class="computerBtn paper">PAPER</button>
+                <button class="computerBtn scissors">SCISSORS</button>
+            </div>
+            
+        </div>
+
+        <p class="roundResult">Round result</p>
+
+        <div class="player-container">
+            <div class="game-buttons">
+                <button class="playerBtn">ROCK</button>
+                <button class="playerBtn">PAPER</button>
+                <button class="playerBtn">SCISSORS</button>
+            </div>
+            <header>
+                <h1>YOU</h1>
+                <p>Score: [ <span class="playerResult"></span> ]</p>
+            </header>
         </div>
     </div>
 

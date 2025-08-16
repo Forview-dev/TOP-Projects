@@ -9,26 +9,51 @@ const computer = "computer";
 
 const playerResults = document.querySelector(".playerResult");
 const computerResult = document.querySelector(".computerResult");
-const rockBtn = document.querySelector(".rockBtn");
-const paperBtn = document.querySelector(".paperBtn");
-const scissorsBtn = document.querySelector(".scissorsBtn");
+const roundResult = document.querySelector(".roundResult");
+
+const playerBtns = document.querySelectorAll(".playerBtn");
+const computerBtns = document.querySelectorAll(".computerBtn");
 
 let playerScore = 0;
 let computerScore = 0;
 let round = 0;
 
+playerBtns.forEach(
+    (button) => button.addEventListener('click', () => {
+        computerChoice = getComputerChoice();
+        playerChoice = button.innerText.toLowerCase();
 
-rockBtn.addEventListener("click", () => {
-    playRound(rock, getComputerChoice());
-});
+        const roundWinner = playRound(playerChoice, computerChoice);
 
-paperBtn.addEventListener("click", () => {
-    playRound(paper, getComputerChoice());
-});
+        updateDOM(roundWinner);
 
-scissorsBtn.addEventListener("click", () => {
-    playRound(scissors, getComputerChoice());
-});
+    })
+);
+
+function updateDOM(playedRoundResult) {
+    console.log("🚀 ~ update DOM ");
+
+    btnAddChoiceClass();
+    playerResults.innerText = playerScore;
+    computerResult.innerText = computerScore;
+    
+    if (playedRoundResult === null)
+        roundResult.innerText = "DRAW !";
+    else if(playedRoundResult === player)
+        roundResult.innerText = "PLAYER WINS !";
+    else if (playedRoundResult === computer)
+        roundResult.innerText = "COMPUTER WINS !";
+    else
+        roundResult.innerText = "Round result";
+}
+
+function btnAddChoiceClass() {
+    computerBtns.forEach((button) => {
+        button.classList.remove("choice");
+        if(button.classList.contains(computerChoice))
+            button.classList.add("choice");
+    })
+}
 
 function getComputerChoice() {
     let n = Math.random();
@@ -41,29 +66,6 @@ function getComputerChoice() {
     else return scissors;
 }
 
-function getPlayerChoice() {
-    let choice = prompt("Please enter your choice >");
-
-    // lets make that case insensitive
-    return choice.toLowerCase();
-}
-
-function updateDOM(playerScore, computerScore, isGameComplete) {
-    playerResults.textContent = playerScore;
-    computerResult.textContent = computerScore;
-}
-
-function computeRound(winner) {
-    if(winner === player) {
-        playerScore++;
-    }
-    else if(winner === computer) {
-        computerScore++;
-    }
-
-    updateDOM(playerScore, computerScore, false)
-}
-
 function playRound(playerChoice, computerChoice) {
     let roundWinner = null;
 
@@ -71,7 +73,7 @@ function playRound(playerChoice, computerChoice) {
     console.log(`
         Player: ${playerChoice}
         Computer: ${computerChoice}`);
-
+ 
     // figuring out the win conditions
     switch (playerChoice) {
         case rock:
@@ -137,7 +139,15 @@ function playRound(playerChoice, computerChoice) {
             break;       
     }
 
-    computeRound(roundWinner);
+    if(roundWinner === player)
+        playerScore++;
+    else if(roundWinner === computer)
+        computerScore++;
+
+
+    return roundWinner;
+
 }
 
-updateDOM(playerScore, computerScore, false);
+
+updateDOM("init");
