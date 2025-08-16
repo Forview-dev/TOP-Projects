@@ -10,6 +10,11 @@ const CELL_SIZE_IN_PX = 10;
 const GRID_HEIGHT = containerHeight/CELL_SIZE_IN_PX;
 const GRID_WIDTH = viewportWidth/CELL_SIZE_IN_PX;
 
+const resetBtn = document.querySelector(".reset");
+resetBtn.addEventListener("click", () => {
+    gridReset();
+})
+
 // lets build our grid array
 let grid = [];
 
@@ -42,4 +47,12 @@ function changeCellBgColor(cell) {
     opacity += 0.15;
 
     cell.style.opacity = opacity.toString();
+}
+
+function gridReset() {
+    for(let i = 0; i < GRID_WIDTH; i++) {
+        for(let j = 0; j < GRID_WIDTH; j++) {
+            grid[i][j].style.opacity = "0";
+        }
+    }
 }
