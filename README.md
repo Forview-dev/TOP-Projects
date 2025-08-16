@@ -41,3 +41,4 @@ The contents might be messy at times — and that’s intentional (not really). 
 - **Aug. 11 to Aug 12, 2025**: Learned about flexboxes (*amazing!*), refactored the landing page with all the new knowledge
 - **Aug 13, 2025**: Tinkered with some Javascript
 - **Aug 16, 2025**: Rock, Paper, Scissors project completed with UI and DOME manipulation
+- **Aug 17, 2025**: Etch-a-Sketch completed 
