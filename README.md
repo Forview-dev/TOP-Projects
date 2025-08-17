@@ -1,9 +1,12 @@
 # TOP-Projects
+
 ## 📚 My Learning Journey, a repository
+
 This repository is not just code — it’s a record of my growth, experiments, mistakes, and discoveries as I learn and improve as a developer.
 Every commit here tells something: a problem I tried to solve, a concept I explored, a mistake I made, or a new tool I tried for the first time.
 
 ## 🌱 Philosophy
+
 I believe learning to code isn’t just about reaching an end goal — it’s about **documenting the journey**.
 This repository is my way of:
 
@@ -19,6 +22,7 @@ I treat this repo as:
 - A time capsule — where future-me can look back and smile at past-me’s code
 
 ## 🛠 What’s Inside
+
 Here you’ll find:
 
 - Small projects & practice exercises
@@ -29,16 +33,18 @@ Here you’ll find:
 The contents might be messy at times — and that’s intentional (not really). Growth isn’t linear, and this repo reflects that.
 
 ## 🚀 How I am using this repository
+
 - **Learn something new** from tutorials (mainly the odin project), books, experiments
 - **Apply it in code** no matter how small the project
 - **Commit the work** along with a note on what I learned or struggled with
 - **Reflect** from time to time on past commits or struggles on projects
 
 ## 🗓 Timeline of Learning
+
 - **Aug. 10, 2025**: Initial commit, trying to figure out git, and some HTML & CSS basic courses
-    - **same day**: completing the first assignement in the form of a basic cookbook
-    - **same day**: figured I should use some form of boilerplate on my projects, so I added a folder which would contain that
-- **Aug. 11 to Aug 12, 2025**: Learned about flexboxes (*amazing!*), refactored the landing page with all the new knowledge
+  - **same day**: completing the first assignement in the form of a basic cookbook
+  - **same day**: figured I should use some form of boilerplate on my projects, so I added a folder which would contain that
+- **Aug. 11 to Aug 12, 2025**: Learned about flexboxes (_amazing!_), refactored the landing page with all the new knowledge
 - **Aug 13, 2025**: Tinkered with some Javascript
-- **Aug 16, 2025**: Rock, Paper, Scissors project completed with UI and DOME manipulation
-- **Aug 17, 2025**: Etch-a-Sketch completed 
+- **Aug 16, 2025**: Rock, Paper, Scissors project completed with UI and DOM manipulation
+- **Aug 17, 2025**: Etch-a-Sketch completed
