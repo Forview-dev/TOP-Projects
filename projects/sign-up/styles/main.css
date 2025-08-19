@@ -73,4 +73,144 @@ h6 {
 /* ---------------------------------------- */
 /* ---------------------------------------- */
 /* ---------------------------------------- */
+/* --------------------- */
+/* COLOR PALETTE         */
+/* light blue: #95B1EE   */
+/* white: #FFFDF5        */
+/* light green: #E7F1A8  */
+/* dark blue: #364C84    */
+/* Accent color (40, 55, 43) */
+/* --------------------- */
 
+
+body {
+    height: 100vh;
+
+    display: flex;
+}
+
+body>* {
+    background-color: #FFF;
+}
+
+section.sidepanel {
+    flex: 1 1 0%;
+
+    background-image: url(../images/splash.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+}
+section nav {
+    padding: 2em;
+}
+
+section nav a {
+    color: #FFFDF5;
+    transition-duration: 500ms;
+    transition-property: all;
+
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    position: relative;
+    font-style: italic;
+    font-size: 14px;
+
+    &:hover {
+        transition-duration: 500ms;
+        transition-property: all;
+        text-decoration-color: #FFFDF5;
+    }
+
+}
+
+section .title {
+    
+    background-color: rgba(0, 0, 0, .3);
+
+    text-align: center;
+    line-height: 8em;
+    height: 8em;
+}
+
+section .title h1 {
+    font-size: 30px;
+    color: #FFFDF5;
+}
+
+main {
+    flex: 2 1 0%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main header, main footer {
+    flex: 1 1 0%;
+    background-color: rgb(247, 248, 250);
+}
+
+.form-container {
+    flex: 3 1 0%;
+    background-color: #FFF;
+
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+}
+
+.form {
+    flex: 3 1 0%;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    gap: 2em;
+}
+
+.form .row {
+    display: flex;
+}
+
+.form .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    padding: 1em;
+
+    label {
+        font-size: 12px;
+    }
+    input {
+        font-size: 14px;
+        width: 20rem;
+    }
+}
+
+.form-footer {
+    padding-left: 2em;
+    background-color: rgb(247, 248, 250)
+}
+
+.form-footer .create {
+    width: 20rem;
+    height: 3rem;
+    font-size: 16px;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #FFF;
+    background-color: rgb(040, 055, 043);
+    border-radius: 10px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+.login {
+    color: rgb(040, 055, 043);
+    font-weight: bold;
+}
