@@ -48,3 +48,5 @@ The contents might be messy at times — and that’s intentional (not really). 
 - **Aug 13, 2025**: Tinkered with some Javascript
 - **Aug 16, 2025**: Rock, Paper, Scissors project completed with UI and DOM manipulation
 - **Aug 17, 2025**: Etch-a-Sketch completed
+- **Aug 21, 2025**: Sign-up form done !
+- **Aug 24, 2025**: Started the Admin dashboard project
