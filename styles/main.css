@@ -141,6 +141,8 @@ body {
     /* border: 1px solid red; */
     font-weight: bold;
     font-size: 34px;
+    color: #364c84;
+    text-shadow: #e0e0e0 1px 1px 0;
 }
 
 .project-list-container .project-list {
