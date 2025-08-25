@@ -11,6 +11,7 @@
 
 * {
     margin: 0;
+    outline: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
